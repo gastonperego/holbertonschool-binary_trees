@@ -8,14 +8,14 @@
 */
 void binary_tree_delete(binary_tree_t *tree)
 {
-    binary_tree_t *tmp = tree;
+	binary_tree_t *tmp = tree;
 
-    if (!tree)
-        ;
-    else
-    {
-        binary_tree_delete(tmp->left);
-        binary_tree_delete(tmp->right);
-        free(tmp);
-    }
+	if (!tree)
+		;
+	else
+	{
+		binary_tree_delete(tmp->left);
+		binary_tree_delete(tmp->right);
+		free(tmp);
+	}
 }
